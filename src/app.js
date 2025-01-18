@@ -6,13 +6,13 @@ export function createApp(root) {
       const render = () => {
         root.innerHTML = `
           <h1>Todo App</h1>
-          <input type="text" id="todo-input" placeholder="Add a new todo">
-          <button id="add-todo">Add</button>
+          <input type="text" id="todo-input" placeholder="Ajouter une nouvelle tâche">
+          <button id="add-todo">Ajouter</button>
           <ul id="todo-list">
             ${state.todos.map(todo => `
               <li>
                 ${todo}
-                <button class="delete-todo">Delete</button>
+                <button class="delete-todo">Supprimer</button>
               </li>
             `).join('')}
           </ul>
